@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Semocionar - Formulário de Cadastro e Anamnese</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo Gd_H.jpeg" alt="logo_principal" class="imagem__logo__principal">
+        <h1 class="titulo">Formulário de Cadastro</h1>
+    </header>
+    <main class="container">
+
+        <section>
+            <div class="container__form">
+                <div class="container__linha__superior"></div>
+                <header>
+                    <h2 class="container__form__titulo">Informações Pessoais</h2>
+                </header>
+                <br>
+                <form action="" method="post" class="container__form__conteudo">
+                    <label for="" class="rotulo">Nome Completo do Avaliado
+                        <input class="input__rotulo" type="text" name="nome" id="" maxlength="100">
+                    </label>
+                    <label for="" class="rotulo ">CPF do Avaliado <b>(Apenas Números)</b>
+                        <input class="input__rotulo cpf" type="text" name="cpf" id="" maxlength="11">
+                    </label>
+                    <label for="" class="rotulo ">Data de Nascimento
+                        <input class="input__rotulo data" type="date" name="dt_nasc" id="">
+                    </label>
+                    <label for="" class="rotulo">Responsável 1
+                        <input class="input__rotulo" type="text" maxlength="100">
+                    </label>
+                    <label for="" class="rotulo">Responsável 2
+                        <input class="input__rotulo" type="text" name="" id="" maxlength="100">
+                    </label>
+                </form>
+                <div class="container__linha__inferior"></div>
+            </div>
+
+        </section>
+        <br><br>
+        <section>
+            <div class="container__form">
+                <div class="container__linha__superior"></div>
+                <header>
+                    <h2 class="container__form__titulo">Endereço</h2>
+                </header>
+                <br>
+                <form action="" class="container__form__conteudo">
+                    <label for="" class="rotulo">País
+                        <input class="input__rotulo" type="text" name="" maxlength=30>
+                    </label>
+                    <label for="" class="rotulo ">Estado
+                        <select name="estado" id="" class="rotulo input__rotulo">
+                            <option value="" data-default disabled selected></option>
+                            <option value="AC">ACRE</option>
+                            <option value="AL">ALAGOAS</option>
+                            <option value="AP">AMAPÁ</option>
+                            <option value="AM">AMAZONAS</option>
+                            <option value="BA">BAHIA</option>
+                            <option value="CE">CEARÁ</option>
+                            <option value="DF">DISTRITO FEDERAL</option>
+                            <option value="ES">ESPÍRITO SANTO</option>
+                            <option value="GO">GOIÁS</option>
+                            <option value="MA">MARANHÃO</option>
+                            <option value="MT">MATO GROSSO</option>
+                            <option value="MS">MATO GROSSO DO SUL</option>
+                            <option value="MG">MINAS GERAIS</option>
+                            <option value="PA">PARÁ</option>
+                            <option value="PB">PARAÍBA</option>
+                            <option value="PR">PARANÁ</option>
+                            <option value="PE">PERNAMBUCO</option>
+                            <option value="PI">PIAUÍ</option>
+                            <option value="RJ">RIO DE JANEIRO</option>
+                            <option value="RN">RIO GRANDE DO NORTE</option>
+                            <option value="RS">RIO GRANDE DO SUL</option>
+                            <option value="RO">RONDÔNIA</option>
+                            <option value="RR">RORAIMA</option>
+                            <option value="SC">SANTA CATARINA</option>
+                            <option value="SP">SÃO PAULO</option>
+                            <option value="SE">SERGIPE</option>
+                            <option value="TO">TOCANTINS</option>
+                        </select>
+                    </label>
+                    <label for="" class="rotulo">Município
+                        <input class="input__rotulo" type="text" name="municipio">
+                    </label>
+                    <label for="" class="rotulo">Bairro
+                        <input class="input__rotulo" type="text" name="bairro" id="">
+                    </label>
+                    <label for="" class="rotulo">CEP <b>(Apenas Números)</b>
+                        <input class="input__rotulo" type="text" maxlength="8">
+                    </label>
+                    <label for="" class="rotulo">Endereço
+                        <input class="input__rotulo" type="text" name="endereco" id="">
+                    </label>
+                    <label for="" class="rotulo">Número
+                        <input class="input__rotulo" type="text" name="end_numero" id="">
+                    </label>
+                    <label for="" class="rotulo">Complemento
+                        <input class="input__rotulo" type="text" name="endereco_comp" id="">
+                    </label>
+
+                </form>
+                <div class="container__linha__inferior"></div>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <div class="container__form">
+                <div class="container__linha__superior"></div>
+                <header>
+                    <h2 class="container__form__titulo">Dados para Anamnese</h2>
+                </header>
+                <br>
+                <form action="" class="container__form__conteudo">
+                    <label class="rotulo" for="">Qual a Demanda? <br>
+                        <input class="inputbox" type="radio" name="Autismo" id=""> Autismo <br>
+                        <input class="inputbox" type="radio" name="TDAH" id=""> TDAH <br>
+                        <input class="inputbox" type="radio" name="TDL"> TDL <br>
+                        <input class="inputbox" type="radio" name="Altas Habilidades/ Superdotação" id=""> Altas
+                        Habilidades/ Superdotação <br>
+                        <input class="inputbox" type="radio" name="TOD" id=""> TOD <br>
+                        <input class="inputbox" type="radio" name="Outros" id=""> Outros
+                        <input class="inputbox text_another" type="text" name="Outros">
+                    </label><br>
+                    <label class="rotulo" for="">Nome da Escola <b>(Exceto Adultos)</b>
+                        <input class="input__rotulo" type="text" name="nome_escola" id="">
+                    </label><br>
+                    <label class="rotulo" for="">Possui Indicação Profissional? <br>
+                        <input class="inputbox" type="radio" name="Sim" id=""> Sim <br>
+                        <input class="inputbox" type="radio" name="Não" id=""> Não <br>
+                    </label><br>
+                    <label class="rotulo" for="">Especialidade do Profissional <br>
+                        <input class="inputbox" type="radio" name="especialidade_prof" id=""> Psicologia <br>
+                        <input class="inputbox" type="radio" name="especialidade_prof" id=""> Fonoaudiologia <br>
+                        <input class="inputbox" type="radio" name="especialidade_prof" id=""> Neuropediatria <br>
+                        <input class="inputbox" type="radio" name="especialidade_prof" id=""> Pediatria <br>
+                        <input class="inputbox" type="radio" name="especialidade_prof" id=""> Outros
+                        <input class="text_another" type="text" name="especialidade_prof" id="">
+                    </label><br>
+                    <label class="rotulo" for="">Caso tenha indicação, qual o nome do Profissional?
+                        <input class="input__rotulo" type="text" name="nome_profissional" id="">
+                    </label><br>
+                    <label class="rotulo" for="">Forma de Pagamento <br>
+                        <input class="inputbox" type="radio" name="forma_pag" id=""> À vista <br>
+                        <input class="inputbox" type="radio" name="forma_pag" id=""> 2x <br>
+                        <input class="inputbox" type="radio" name="forma_pag" id=""> 3x <br>
+                    </label>
+
+                </form>
+                <div class="container__linha__inferior"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container__form">
+                <div class="container__linha__superior"></div>
+                <header>
+                    <h2 class="container__form__titulo">Dados para a Nota Fiscal</h2>
+                </header>
+                <br>
+                <label class="rotulo" for="">Nome Completo
+                    <input class="input__rotulo" type="text" name="nome_nf" id="">
+                </label>
+                <label class="rotulo" for="">CPF <b>(Apenas Números)</b>
+                    <input class="input__rotulo" type="text" name="cpf_nf" id="">
+                </label>
+                <label class="rotulo" for="">Endereço Completo
+                    <input class="input__rotulo" type="text" name="end_nf" id="">
+                </label>
+                <label class="rotulo" for="">CEP <b>(Apenas Números)</b>
+                    <input class="input__rotulo" type="text" name="cep_nf" id="">
+                </label>
+                <label class="rotulo" for="">Telefone <b>(Apenas Números)</b>
+                    <input class="input__rotulo" type="tel" name="" id="">
+                </label>
+                <label class="rotulo" for="">E-mail
+                    <input class="input__rotulo" type="email" name="" id="">
+                </label>
+                <div class="container__linha__inferior"></div>
+            </div>
+        </section>
+        <button type="submit">Enviar Respostas</button>
+    </main>
+</body>
+
+</html>
